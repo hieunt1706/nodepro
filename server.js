@@ -19,12 +19,7 @@ require('dotenv').config()
 
 const connectFun = async()=>{
     try {
-        await mongoose.connect('mongodb+srv://nt13:nt13@cluster0.mdnnq.mongodb.net/Bai6?retryWrites=true&w=majority', {
-            useNewUrlParser: true,
-            useUnifiedTopology: true,
-            useFindAndModify: false,
-            useCreateIndex: true
-        })
+        await mongoose.connect('mongodb+srv://nt13:nt13@cluster0.mdnnq.mongodb.net/Bai6?retryWrites=true&w=majority')
         console.log("Success")
     } catch (error) {
         console.log(error)
